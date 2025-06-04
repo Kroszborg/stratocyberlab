@@ -15,6 +15,7 @@ RUN apt-get update && apt-get install -y \
     libcap2-bin \
     grep \
     cron \
+    dos2unix \
     && rm -rf /var/lib/apt/lists/*
 
 RUN mkdir /var/run/sshd
@@ -33,6 +34,6 @@ RUN sed -i 's/#PasswordAuthentication yes/PasswordAuthentication yes/' /etc/ssh/
 
 # Run attacker actions
 COPY attack.sh /attack.sh
-RUN /attack.sh && rm /attack.sh
+RUN chmod +x /attack.sh && dos2unix /attack.sh && /attack.sh && rm /attack.sh
 
 CMD ["/usr/sbin/sshd", "-D"]

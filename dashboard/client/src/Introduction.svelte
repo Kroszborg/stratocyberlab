@@ -1,6 +1,7 @@
 <div class="d-flex justify-content-center pt-5">
   <div class="shadow p-3 mb-5 bg-body rounded text-center" style="max-width: 700px;">
-    <h4 class="mb-3">Welcome to the StratoCyberLab dashboard</h4>
+    <h1 class="text-4xl font-bold mb-4">Welcome to AstraeaCyber</h1>
+    <p class="text-lg mb-4">Your AI-powered cybersecurity companion</p>
 
     <p class="text-secondary mb-4">The project to practice your cyber-security skills</p>
 

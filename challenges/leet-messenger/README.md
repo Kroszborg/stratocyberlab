@@ -33,8 +33,8 @@ root@hackerlab:~# nc -lnvp 1337 > received.data
 Ncat: Version 7.93 ( https://nmap.org/ncat )
 Ncat: Listening on :::1337
 Ncat: Listening on 0.0.0.0:1337
-Ncat: Connection from 172.20.0.67.
-Ncat: Connection from 172.20.0.67:49948.
+Ncat: Connection from 172.30.0.67.
+Ncat: Connection from 172.30.0.67:49948.
 ```
 
   2. decode the base64 encoded message to find 1st flag

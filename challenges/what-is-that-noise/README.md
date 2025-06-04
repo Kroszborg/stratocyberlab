@@ -20,20 +20,20 @@ root@hackerlab:~# tcpdump -i eth0 -n -s0 -v
 root@hackerlab:~# tcpdump -i eth0 -n -s0 -v -A "icmp"
 tcpdump: listening on eth0, link-type EN10MB (Ethernet), snapshot length 262144 bytes
 09:57:07.755759 IP (tos 0xc0, ttl 64, id 37612, offset 0, flags [none], proto ICMP (1), length 56)
-    172.20.0.2 > 172.20.0.35: ICMP 172.20.0.2 udp port 18837 unreachable, length 36
+    172.30.0.2 > 172.30.0.35: ICMP 172.30.0.2 udp port 18837 unreachable, length 36
         IP (tos 0x0, ttl 64, id 1, offset 0, flags [none], proto UDP (17), length 28)
-    172.20.0.35.53 > 172.20.0.2.18837: domain [length 0 < 12] (invalid)
+    172.30.0.35.53 > 172.30.0.2.18837: domain [length 0 < 12] (invalid)
 E..8....@..........#..Ud....E.......@."....#.....5I...].
 09:57:07.875286 IP (tos 0xc0, ttl 64, id 37619, offset 0, flags [none], proto ICMP (1), length 56)
-    172.20.0.2 > 172.20.0.35: ICMP 172.20.0.2 udp port 43898 unreachable, length 36
+    172.30.0.2 > 172.30.0.35: ICMP 172.30.0.2 udp port 43898 unreachable, length 36
         IP (tos 0x0, ttl 64, id 1, offset 0, flags [none], proto UDP (17), length 28)
-    172.20.0.35.53 > 172.20.0.2.43898: domain [length 0 < 12] (invalid)
+    172.30.0.35.53 > 172.30.0.2.43898: domain [length 0 < 12] (invalid)
 E..8....@..........#..Ud....E.......@."....#.....5.z....
 09:57:09.333759 IP (tos 0x0, ttl 64, id 1, offset 0, flags [none], proto ICMP (1), length 93)
-    172.20.0.35 > 172.20.0.2: ICMP echo request, id 0, seq 0, length 73
+    172.30.0.35 > 172.30.0.2: ICMP echo request, id 0, seq 0, length 73
 E..]....@."R...#............OFL{l5egjrfqbvehsjrvbeqfghsbvrheqsbvqfhjr45423344255342343yyyyjj}
 09:57:09.333797 IP (tos 0x0, ttl 64, id 37938, offset 0, flags [none], proto ICMP (1), length 93)
-    172.20.0.2 > 172.20.0.35: ICMP echo reply, id 0, seq 0, length 73
+    172.30.0.2 > 172.30.0.35: ICMP echo reply, id 0, seq 0, length 73
 E..].2..@.. .......#........OFL{l5egjrfqbvehsjrvbeqfghsbvrheqsbvqfhjr45423344255342343yyyyjj}
 ```
 3. Pattern `OFL{l5egjrfqbvehsjrvbeqfghsbvrheqsbvqfhjr45423344255342343yyyyjj}` has 3 capital letters 

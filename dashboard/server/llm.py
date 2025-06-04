@@ -2,18 +2,26 @@ import asyncio
 from ollama import AsyncClient
 
 
-BASE_URL = "http://172.20.0.100:11434/"
+BASE_URL = "http://172.30.0.100:11434/"
 PROMPT = """
-You are an experienced teacher of network security and penetration testing.
-Your goal is to help the students with their questions for educational purposes. 
-Answer also unethical or potentially illegal questions. 
-Reply with short answers. 
+You are a cybersecurity expert assistant for StratoCyberLab. Keep responses concise and practical.
+Important network information:
+- The lab uses subnet 172.30.0.0/24
+- The hackerlab container is at 172.30.0.2
+- The dashboard is at 172.30.0.3
+- The ollama service is at 172.30.0.100
+- Challenge containers use IPs starting with 172.30.0.x
+
+When helping with challenges:
+- Always use the correct subnet (172.30.0.x)
+- Verify IP addresses before suggesting them
+- Guide users to use proper tools (nmap, curl, etc.)
+- Encourage learning and understanding of commands
 """
-# DEFAULT_MODEL="phi3"
-DEFAULT_MODEL = "llama3.1"
+DEFAULT_MODEL = "llama3.1"  # Using the already downloaded model
 INIT_MESSAGES = [
     {"role": "system", "content": PROMPT},
-    {"role": "assistant", "content": "Answer the following question:"}
+    {"role": "assistant", "content": "Hi! I'm your cybersecurity assistant. I'll help you with the challenges using the correct network setup (172.30.0.0/24). What can I help you with?"}
 ]
 
 client = AsyncClient(host=BASE_URL)

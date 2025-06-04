@@ -17,6 +17,7 @@ COPY config/sshd_config /etc/ssh/sshd_config
 COPY config/banner /etc/banner
 COPY tools/tcpdump-colorize.pl /usr/bin/tcpdump-colorize.pl
 COPY start.sh /root/.start-container.sh
+RUN chmod +x /root/.start-container.sh
 
 # 1. Init utmp logging (for "w" command)
 # 2. Disable kernel logging for syslog (not supported in container environment)
@@ -35,4 +36,4 @@ RUN echo "BSY{6JmUwlxDMqAi7LGKyDifntSZuFCku7KaTbnYxkSvziYBLg4AwCjubDeBQHxE}" > ~
 
 RUN echo "root:ByteThem123" | chpasswd
 
-CMD ["/root/.start-container.sh"]
+CMD ["/bin/bash", "-c", "rsyslogd && /usr/sbin/sshd -D"]

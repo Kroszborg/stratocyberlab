@@ -115,10 +115,10 @@
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light mb-2">
     <div class="container-fluid">
-      <a href="/#" class="navbar-brand ms-2" on:click|preventDefault={handleBrandClick}>
-        <img src="/media/logo.png" alt="Logo" width="30" height="30" class="d-inline-block align-top" />
-        StratoCyberLab
-      </a>
+      <div class="navbar-brand">
+        <img src="/logo.png" alt="AstraeaCyber Logo" class="logo" />
+        <span class="ms-2">AstraeaCyber</span>
+      </div>
     </div>
     {#if snowFlakesEasterEggFeatureFlag}
     <div class="mr-3">

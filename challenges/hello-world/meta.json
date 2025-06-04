@@ -2,24 +2,24 @@
   "name": "Hello World",
   "id": "hello-world", 
   "difficulty": "easy",
-  "description": "Easy challenge to verify your setup is working correctly",
+  "description": "Easy challenge to verify your setup is working correctly. Learn basic commands and network scanning.",
   "tasks": [
     { 
       "id": "task1",
       "name": "Submission test",
-        "description": "Just submit a \"BSY{hello-world}\" as a flag to test the dashboard.",
+      "description": "Submit the flag 'BSY{hello-world}' to verify the dashboard is working.",
       "flag": "BSY{hello-world}" 
     },
     {
       "id": "task2",
       "name": "Hackerlab test",
-      "description": "Find a flag in your hackerlab home.",
+      "description": "Find a hidden flag file in your hackerlab home directory. Use 'ls -la' to see hidden files, then 'cat' to read it.",
       "flag": "BSY{6JmUwlxDMqAi7LGKyDifntSZuFCku7KaTbnYxkSvziYBLg4AwCjubDeBQHxE}"
     },
     {
       "id": "task3",
       "name": "Network test",
-      "description": "Find an HTTP server running at IP address 172.20.0.5 and retrieve a flag.",
+      "description": "Find an HTTP server at 172.30.0.5. Use 'nmap -sS -n -v 172.30.0.5' to scan ports, then 'curl 172.30.0.5:8000' to get the flag.",
       "flag": "BSY{simple-hello-world-flag}"
     }
   ]

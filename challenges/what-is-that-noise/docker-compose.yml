@@ -1,4 +1,4 @@
-version: '3.3'
+version: "3.3"
 
 services:
   what-is-that-noise:
@@ -7,7 +7,7 @@ services:
     build: .
     networks:
       playground-net:
-        ipv4_address: 172.20.0.35
+        ipv4_address: 172.30.0.35
     healthcheck:
       test: ["CMD", "python", "-c", "'assert True'"]
       interval: 30s
