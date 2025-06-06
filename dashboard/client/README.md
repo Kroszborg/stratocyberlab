@@ -1,4 +1,4 @@
-# StratoCyberLab Dashboard - Client
+# AstraeaCyberLab Dashboard - Client
 
 ## Development
 

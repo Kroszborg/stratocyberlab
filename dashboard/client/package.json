@@ -1,5 +1,5 @@
 {
-  "name": "StratoCyberLab",
+  "name": "AstraeaCyberLab",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -29,11 +29,11 @@
   "dependencies": {
     "@xterm/addon-fit": "^0.10.0",
     "@xterm/xterm": "^5.5.0",
+    "AstraeaCyberLab": "file:",
     "bootstrap": "^5.3.2",
     "marked": "^14.1.2",
     "sirv-cli": "^2.0.0",
     "socket.io-client": "^4.7.5",
-    "StratoCyberLab": "file:",
     "xterm": "^5.3.0",
     "yaml": "^2.3.0"
   },

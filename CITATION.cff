@@ -7,14 +7,14 @@ authors:
   - given-names: Maria
     family-names: Rigaki
     email: maria.rigaki@aic.fel.cvut.cz
-    affiliation: Stratosphere Laboratory, AIC, FEL, Czech Technical University in Prague
+    affiliation: AstraeaCyber, AIC, FEL, Czech Technical University in Prague
     orcid: 'https://orcid.org/0000-0002-0688-7752'
   - given-names: Veronica
     family-names: Valeros
     email: valerver@fel.cvut.cz
-    affiliation: Stratosphere Laboratory, AIC, FEL, Czech Technical University in Prague
+    affiliation: AstraeaCyber, AIC, FEL, Czech Technical University in Prague
     orcid: 'https://orcid.org/0000-0003-2554-3231'
-title: "StratoCyberLab: Cyber Range to learn cybersecurity attacking and defending techniques locally in your computer"
+title: "AstraeaCyberLab: Cyber Range to learn cybersecurity attacking and defending techniques locally in your computer"
 version: 1.0.0
 date-released: 2024-03-20
-url: "https://github.com/stratosphereips/stratocyberlab"
+url: "https://github.com/astraeacyber/astraeacyberlab"

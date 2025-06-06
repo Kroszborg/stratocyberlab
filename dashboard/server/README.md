@@ -1,4 +1,4 @@
-# StratoCyberLab Dashboard - Server
+# AstraeaCyberLab Dashboard - Server
 
 ## Development
 

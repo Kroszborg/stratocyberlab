@@ -4,7 +4,7 @@ from ollama import AsyncClient
 
 BASE_URL = "http://172.30.0.100:11434/"
 PROMPT = """
-You are a cybersecurity expert assistant for StratoCyberLab. Keep responses concise and practical.
+You are a cybersecurity expert assistant for AstraeaCyberLab. Keep responses concise and practical.
 Important network information:
 - The lab uses subnet 172.30.0.0/24
 - The hackerlab container is at 172.30.0.2

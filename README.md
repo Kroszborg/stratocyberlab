@@ -1,11 +1,11 @@
-<h1 align="center">StratoCyberLab</h1>
+<h1 align="center">AstraeaCyberLab</h1>
 
 <p align="center">
   <img src="https://github.com/stratosphereips/BSY-playground/assets/26445918/1898de8c-840f-46a5-ad73-fca0b9b84c14" alt="Logo" width="200"/>
 </p>
 
 
-StratoCyberLab is an offline security cyber range to test your knowledge and capabilities on cybersecurity. It was developed by the [Stratosphere Laboratory](https://www.stratosphereips.org/) with two primary goals:
+AstraeaCyberLab is an offline security cyber range to test your knowledge and capabilities on cybersecurity. It was developed by AstraeaCyber with two primary goals:
 
 * To setup local-only security environments for remote students of [Introduction to Security class](https://cybersecurity.bsy.fel.cvut.cz/) to follow weekly classes.
 * To allow anyone to run local-only realistic cyber range to practice attacking & defending skills in the form of challenges (_think HackTheBox but local in your computer!_)
@@ -38,7 +38,7 @@ as this may require a lot compute by generating a lot of network traffic and sta
 However, we estimate the minium requirements to be **3GB of disk** space and **2GB of spare RAM**. (Note that downloading the LLM model will require extra 5GB of disk space)   
 
 ### Software
-The only requirement to run StratoCyberLab is to have `docker (v>20.10)` installed.
+The only requirement to run AstraeaCyberLab is to have `docker (v>20.10)` installed.
 
 ## How to start
 
@@ -46,8 +46,8 @@ The only requirement to run StratoCyberLab is to have `docker (v>20.10)` install
 
 To start the lab do:
 ```bash
-git clone https://github.com/stratosphereips/stratocyberlab.git
-cd stratocyberlab
+git clone https://github.com/astraeacyber/astraeacyberlab.git
+cd astraeacyberlab
 docker compose up
 ```
 
@@ -99,7 +99,7 @@ Please refer to a separate Development documentation at [./docs/development.md](
 
 ## Documentation on adaptations
 
-If you want to use a new LLM model follow the instructions [here](https://github.com/stratosphereips/stratocyberlab/blob/main/docs/add-new-llm-model.md)
+If you want to use a new LLM model follow the instructions [here](https://github.com/astraeacyber/astraeacyberlab/blob/main/docs/add-new-llm-model.md)
 
 ## Connection Architecture
 

@@ -10,7 +10,7 @@ cat /dev/null > /var/log/lastlog
 echo "Nothing to see here." > /home/bob/notes.txt
 setfattr -n user.note -v "This is the flag: https://www.youtube.com/watch?v=dQw4w9WgXcQ" /home/bob/notes.txt
 
-echo "Create a new PR with a new challenge for stratocyberlab." > /home/charlie/todo.txt
+echo "Create a new PR with a new challenge for astraeacyberlab." > /home/charlie/todo.txt
 setfattr -n user.note -v "Or this is the flag? https://www.youtube.com/watch?v=dQw4w9WgXcQ" /home/charlie/todo.txt
 
 # Attacker leaves a process running for fun
